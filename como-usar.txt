@@ -1,0 +1,26 @@
+baixe o script.rar desse link do drive: https://drive.google.com/drive/folders/1YGy0GyEL8EcLBpO_pYvaqjiXXmbSpok_?usp=sharing
+
+o iniciar.bat tem esse código:
+
+{
+@echo off && color a
+
+cd C:\Users\Geysom\Music\music downloader
+
+set /p pasta="insira o nome da pasta: "
+
+mkdir %pasta%
+
+set /p link="Insira o link da musica/video/playlist do youtube: "
+
+echo criando pasta %pasta%
+
+youtube-dl.exe --download-archive downloaded.txt --no-post-overwrites --geo-bypass -ciwx --extract-audio --audio-format mp3 -o %pasta%/"%%(title)s.%%(ext)s" %link%
+
+echo bye.
+pause
+}
+
+se quiser editar o nome do arquivo aonde fica os logs de músicas baixadas é só alterar o "download.txt" para o que quiser.
+
+execute o script e se divirta, tmj
