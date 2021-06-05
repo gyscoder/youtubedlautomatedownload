@@ -24,3 +24,4 @@ pause
 se quiser editar o nome do arquivo aonde fica os logs de músicas baixadas é só alterar o "download.txt" para o que quiser.
 
 execute o script e se divirta, tmj
+.
